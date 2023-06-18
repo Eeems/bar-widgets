@@ -181,7 +181,7 @@ local function drawEtaText(timeLeft, yoffset)
 		etaText = etaPrefix .. string.format("\255\1\255\1%02d:%02d", minutes, seconds)
 	end
 
-	glTranslate(0, yoffset, 10)
+	glTranslate(0, yoffset - 20, 10)
 	glBillboard()
 	glTranslate(0, 5, 0)
 	font:Begin()
